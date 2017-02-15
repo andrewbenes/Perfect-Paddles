@@ -1,0 +1,343 @@
+/*CSS reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*Responsive styles*/
+
+@media screen and (min-width: 600px) {
+  
+  .image-gallery-responsive {
+   
+  }
+   .image-gallery-responsive img {
+ 
+  }
+
+  .rentals-responsive {
+      align-content: center;
+      flex-direction: row;
+      display: flex;
+  }
+  
+  .rentals-responsive table {
+    margin-right: 20px;
+  }
+  
+  .rentals-responsive div, table, p {
+     
+  }
+  
+  .footer-responsive div {
+
+  }
+  
+}
+
+/*Font styles*/
+
+@font-face {
+    font-family: 'karlabold';
+    src: url('assets/fonts/karla-bold-webfont.eot');
+    src: url('assets/fonts/karla-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/karla-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/karla-bold-webfont.woff') format('woff'),
+         url('assets/fonts/karla-bold-webfont.svg#karlabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlabolditalic';
+    src: url('assets/fonts/karla-bolditalic-webfont.eot');
+    src: url('assets/fonts/karla-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/karla-bolditalic-webfont.woff2') format('woff2'),
+         url('assets/fonts/karla-bolditalic-webfont.woff') format('woff'),
+         url('assets/fonts/karla-bolditalic-webfont.svg#karlabolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaitalic';
+    src: url('assets/fonts/karla-italic-webfont.eot');
+    src: url('assets/fonts/karla-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/karla-italic-webfont.woff2') format('woff2'),
+         url('assets/fonts/karla-italic-webfont.woff') format('woff'),
+         url('assets/fonts/karla-italic-webfont.svg#karlaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('assets/fonts/karla-regular-webfont.eot');
+    src: url('assets/fonts/karla-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/karla-regular-webfont.woff') format('woff'),
+         url('assets/fonts/karla-regular-webfont.svg#karlaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('assets/fonts/pacifico-webfont.eot');
+    src: url('assets/fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/pacifico-webfont.woff2') format('woff2'),
+         url('assets/fonts/pacifico-webfont.woff') format('woff'),
+         url('assets/fonts/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*General styles*/
+
+body {
+  font-size: 16px;
+  font-family: karla;
+  color: #2d2d2d;
+}
+
+a {
+  text-decoration: none;
+  color: #e2574c;
+}
+
+a:hover {
+  color: #b64036;
+}
+
+h2 {
+  font-family: pacifico;
+  font-size: 35px;
+  color: #646464;
+  text-align: center;
+}
+
+.body-copy {
+  padding: 20px 50px;
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.spacer-10 {
+  margin: 10px 0;
+}
+
+.spacer-above-20 {
+  margin-top: 20px;
+}
+
+.spacer-above-40 {
+  margin-top: 40px;
+}
+
+.footer-dark {
+  color: #777
+}
+
+
+/*Navigation section*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 44px;
+  color: #fff;
+  background-color: black;
+}
+
+.logo {
+  padding: 1px 20px 0px 1px;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  padding: 5px;
+}
+
+nav ul {
+  width: 200px;
+}
+
+nav li {
+  list-style-type: none;
+  text-decoration: none;
+  float: left;
+  margin-top: 12px;
+}
+
+nav li a {
+  color: #efefef;
+  font-family: karla-bold, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 7px;
+  margin: 0;
+}
+
+nav li a:hover {
+  color: #515151;
+}
+
+
+/*Header section*/
+
+.hero-container {
+  padding-top: 40px;
+}
+
+header {
+  margin-top: 44px;
+  text-align: center;
+  color: #fff;
+  height: 375px;
+  max-width: 100%;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("assets/images/kayak-bkgd.jpg");
+  background-size: cover;
+}
+
+.heading-small {
+  font-size: 16px;
+  margin: 0;
+}
+
+.heading-medium {
+  font-size: 30px;
+  font-family: pacifico, serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+}
+
+.heading-large {
+  font-size: 50px;
+  font-family: pacifico, serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+}
+
+header p {
+  display: inline-block;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 5px 10px;
+}
+
+.sign-me-up-button {
+  margin: 5px;
+  background-color: #E2574C;
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: all 0.25s ease;
+}
+
+.sign-me-up-button:hover {
+  color: #b64036;
+}
+
+
+/*Gallery section*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-gallery img {
+  padding: 5px;
+  width: 250px;
+  max-height: 250px;
+  flex-grow: 1;
+}
+
+
+/*Table style*/
+
+.pricing-table {
+  border: 1px solid #c8c8c8;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.pricing-table th {
+  border: 1px solid #c8c8c8;
+  border-collapse: collapse;
+  padding: 0 5px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+td {
+  border: 1px solid #c8c8c8;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #fbf6d9;
+}
+
+
+/*Map*/
+
+.map {
+  margin: 20px;
+}
+
+
+/*Footer section*/
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 40px 10px;
+  color: #fff;
+  background-color: #252525;
+}
+
+footer i {
+  color: #fff;
+}
