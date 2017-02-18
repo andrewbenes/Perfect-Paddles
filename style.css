@@ -21,37 +21,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/*Responsive styles*/
-
-@media screen and (min-width: 600px) {
-  
-  .image-gallery-responsive {
-   
-  }
-   .image-gallery-responsive img {
- 
-  }
-
-  .rentals-responsive {
-      align-content: center;
-      flex-direction: row;
-      display: flex;
-  }
-  
-  .rentals-responsive table {
-    margin-right: 20px;
-  }
-  
-  .rentals-responsive div, table, p {
-     
-  }
-  
-  .footer-responsive div {
-
-  }
-  
-}
-
 /*Font styles*/
 
 @font-face {
@@ -113,7 +82,6 @@ time, mark, audio, video {
     font-style: normal;
 
 }
-
 /*General styles*/
 
 body {
@@ -158,12 +126,21 @@ h2 {
   margin-top: 20px;
 }
 
+.spacer-above-below-20 margin: 20px;
 .spacer-above-40 {
   margin-top: 40px;
 }
 
 .footer-dark {
   color: #777
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-block {
+  display: block;
 }
 
 
@@ -193,6 +170,7 @@ nav {
 
 nav ul {
   width: 200px;
+  margin-right: 10px;
 }
 
 nav li {
@@ -226,7 +204,7 @@ header {
   margin-top: 44px;
   text-align: center;
   color: #fff;
-  height: 375px;
+  height: 400px;
   max-width: 100%;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("assets/images/kayak-bkgd.jpg");
   background-size: cover;
@@ -256,8 +234,7 @@ header p {
   padding: 5px 10px;
 }
 
-.sign-me-up-button {
-  margin: 5px;
+.sign-me-up-button a {
   background-color: #E2574C;
   border: none;
   color: #fff;
@@ -267,24 +244,50 @@ header p {
   transition: all 0.25s ease;
 }
 
-.sign-me-up-button:hover {
+.sign-me-up-button a:hover {
   color: #b64036;
+}
+
+@media screen and (min-width: 600px) {
+  .heading-large {
+    font-size: 4.5rem;
+  }
+  .heading-medium {
+    font-size: 2.5rem;
+  }
 }
 
 
 /*Gallery section*/
 
-.image-gallery {
+.gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
-.image-gallery img {
-  padding: 5px;
-  width: 250px;
-  max-height: 250px;
-  flex-grow: 1;
+.gallery img {
+  width: 380px;
+  height: auto;
+  padding: 2.5px 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 190px;
+    padding: 5px;
+    flex-grow: 1;
+  }
 }
 
 
@@ -294,6 +297,7 @@ header p {
   border: 1px solid #c8c8c8;
   border-collapse: collapse;
   padding: 10px;
+  width: 350px;
 }
 
 .pricing-table th {
@@ -320,6 +324,38 @@ tr:hover {
   background-color: #fbf6d9;
 }
 
+.rentals-responsive {
+  display: flex;
+}
+
+@media screen and (min-width: 400px) {
+  .rentals-responsive {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-copy {
+    flex-grow: 1;
+  }
+  .pricing-table {
+    flex-grow: 1;
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .rentals-responsive {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .pricing-table {
+    min-width: 550px;
+  }
+}
+
 
 /*Map*/
 
@@ -331,6 +367,7 @@ tr:hover {
 /*Footer section*/
 
 footer {
+  display: flex;
   text-align: center;
   font-size: 12px;
   padding: 40px 10px;
@@ -338,6 +375,49 @@ footer {
   background-color: #252525;
 }
 
+.contact {
+  margin: 15px auto;
+}
+
 footer i {
   color: #fff;
+}
+
+.social-buttons a {
+  color: #fff;
+}
+
+.social-buttons i {
+  min-width: 15px;
+}
+
+@media screen and (max-width: 599px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-buttons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .social-link p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-copy {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .social-buttons {
+    flex-direction: column;
+    text-align: left;
+    margin-right: 20px;
+  }
 }
