@@ -89,7 +89,7 @@ html, body {
 
 body {
   font-size: 16px;
-  font-family: karla;
+  font-family: 'karlaregular';
   color: #2d2d2d;
 }
 
@@ -107,7 +107,7 @@ li {
 }
 
 h2 {
-  font-family: pacifico;
+  font-family: 'pacificoregular';
   font-size: 35px;
   color: #646464;
   text-align: center;
@@ -188,7 +188,7 @@ nav li {
 
 nav li a {
   color: #efefef;
-  font-family: karla-bold, sans-serif;
+  font-family: 'karlabold';
   font-size: 12px;
   padding: 6px;
   margin: 0;
@@ -222,13 +222,13 @@ header {
 
 .heading-medium {
   font-size: 30px;
-  font-family: pacifico, serif;
+  font-family: 'pacificoregular', serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
 }
 
 .heading-large {
   font-size: 50px;
-  font-family: pacifico, serif;
+  font-family: 'pacificoregular', serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
 }
 
