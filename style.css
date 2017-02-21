@@ -399,10 +399,10 @@ footer i, .social-buttons a {
     flex-direction: column;
     align-items: center;
   }
-  .social-buttons i {
+  .social-buttons li {
     display: inline;
   }  
-  .social-link p {
+  .social-link span {
     display: none;
   }
 }
