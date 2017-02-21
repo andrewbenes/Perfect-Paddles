@@ -107,6 +107,10 @@ a:hover {
   color: #b64036;
 }
 
+li {
+  list-style-type: none;
+}
+
 h2 {
   font-family: pacifico;
   font-size: 35px;
@@ -183,7 +187,6 @@ nav ul {
 }
 
 nav li {
-  list-style-type: none;
   float: left;
   margin-top: 11px;
 }
