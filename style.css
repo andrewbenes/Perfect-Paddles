@@ -214,7 +214,7 @@ header {
   color: #fff;
   height: 400px;
   max-width: 100%;
-  background-image: linear-gradient(45deg, rgba(27, 40, 10, 0.1), rgba(27, 20, 70, 0.55)), url("assets/images/kayak-bkgd.jpg");
+  background-image: linear-gradient(45deg, rgba(27, 40, 10, 0.1), rgba(27, 20, 70, 0.55)), url("assets/images/kayak-bkgd2.jpg");
   background-size: cover;
 }
 
@@ -396,10 +396,9 @@ footer i, .social-buttons a {
     flex-direction: column;
     align-items: center;
   }
-  .social-buttons {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  .social-buttons i {
+    display: inline;
+  }  
   .social-link p {
     display: none;
   }
